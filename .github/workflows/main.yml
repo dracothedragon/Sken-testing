@@ -1,8 +1,7 @@
 name: CI
 on:
   push:
-    branches: [ github-action ]
-    
+    branches: [ github-action ]   
   pull_request:
     branches: [ github-action ]
     
@@ -23,5 +22,6 @@ jobs:
         
     - name: Install skencli
       run: pip3 install --upgrade skencli
+      
     - name: Run skencli
       run: skencli
